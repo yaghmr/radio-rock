@@ -1,0 +1,14 @@
+extends layout
+
+block content
+
+    div(id='results', class='centered')
+      h1 Tune the radio on  
+        input(type='textbox', id='tag')
+
+      span(id="info", class='bottom_center')
+
+    audio(id="player", controls="controls", autoplay)
+
+
+    progress(id="progressBar", max="0", value="0", class="top_right")

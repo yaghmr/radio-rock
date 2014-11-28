@@ -1,0 +1,104 @@
+html {
+  background: url(/images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  padding: 30px;
+  font: 14px Helvetica, sans-serif;
+  color: #555;
+}
+
+h2 {
+	margin:0 0 .5em 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+input {
+  background-color: #FFF;
+  color: #888;
+  width: 300px;
+  height: 32px;*/
+  border-radius: 3px;
+  border: 1px solid #FFF;
+  padding: 8px;
+  font-weight: 200;
+  font-size: 24px;
+  opacity: 0.95;
+  filter:Alpha(opacity=95);
+}
+
+
+audio{
+  display:none;
+}
+
+progress {
+  display:none;
+  background-color: #FFF;
+  border: 0;
+  height: 18px;
+  border-radius: 9px;
+  opacity: 0.3;
+  filter:Alpha(opacity=30);
+}
+
+progress::-moz-progress-bar {
+  background-color: #FFF;
+}
+progress::-webkit-progress-value {
+  background-color: #FFF;
+}
+
+.centered {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.bottom_right {
+  position:absolute;
+  bottom:0; right:0;
+  padding: 8px;
+  text-align: right;
+}
+
+.top_right {
+  position:absolute;
+  top:0; right:0;
+  margin: 8px;
+}
+
+.bottom_center {
+  position:absolute;
+  left: 0; bottom: 0; right: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+#results {
+  height:15%;
+  width: 80%;
+  background-color: #EEE;
+  border-radius: 5px;
+  opacity: 0.9;
+  filter:Alpha(opacity=90);
+  padding: 8px;
+}
+
+#results h1 {
+  text-align: center;
+}
+
+#player {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+}
