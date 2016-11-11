@@ -4,9 +4,6 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-// Database
-var mongo = require('mongoskin');
-var db = mongo.db("mongodb://localhost:27017/radiorock", {native_parser:true});
 
 var routes = require('./routes/index');
 var tags = require('./routes/tags');
@@ -47,11 +44,6 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Make our db accessible to our router
-app.use(function(req,res,next){
-    req.db = db;
-    next();
-});
 
 app.use('/', routes);
 app.use('/tag', tag);
