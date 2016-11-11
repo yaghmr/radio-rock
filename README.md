@@ -1,7 +1,7 @@
 Radio Rock
 ==========
 Simple Node.js mp3 streaming radio from BandCamp.
-Builded with Express, jade, mongodb, HTML5 <audio>
+Builded with Express, jade, HTML5 <audio>
 
 
 TODO
